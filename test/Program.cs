@@ -9,24 +9,19 @@ namespace ConsoleApplication14
     {
         static void Main(string[] args)
         {
-            int x, y;
-            string t;
-            Console.Write("x: ");
-            t = Console.ReadLine();
-            x = int.Parse(t);
+            int[] mojaTablica = new int[1000];
 
-            Console.Write("y: ");
-            t = Console.ReadLine();
-            y = int.Parse(t);
 
-            if (x > y)
-                Console.WriteLine("{0}>{1}", x, y);
-            else if (x < y)
-                Console.WriteLine("{0}<{1}", x, y);
-            else
-                Console.WriteLine("{0}={1}", x, y);
-
+            for (int i = 0; i < mojaTablica.Length; i++)
+            {
+                mojaTablica[i] = i;
+                Console.WriteLine(mojaTablica[i]);
+              
+            }
+            //tylko koment
             Console.ReadLine();
         }
+              
+        
     }
 }
